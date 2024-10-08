@@ -72,7 +72,7 @@ const SignUp = () => {
           state: "failed",
         });
       }
-      ƒ;
+      ;
     } catch (err: any) {
       setVerification({
         ...verification,

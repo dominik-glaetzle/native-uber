@@ -70,7 +70,7 @@ export default function Layout() {
           ),
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="chat"
         options={{
           title: "Chat",
@@ -79,7 +79,7 @@ export default function Layout() {
             <TabIcon source={icons.chat} focused={focused} />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name="profile"
         options={{
