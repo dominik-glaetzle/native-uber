@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b01728-255f-4176-a6ff-dcac4a132757" name="Changes" comment="file setup">
-      <change afterPath="$PROJECT_DIR$/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/image.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/type.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="69b01728-255f-4176-a6ff-dcac4a132757" name="Changes" comment="added map, driver locations, google search api need to be linked">
+      <change afterPath="$PROJECT_DIR$/lib/map.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(auth)/welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/welcome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/(tabs)/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/(tabs)/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GoogleTextInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GoogleTextInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Map.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -27,11 +32,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/smxkz/native-uber.git&quot;,
+    &quot;accountId&quot;: &quot;02eaaf56-cc1f-454f-843f-86093230fce2&quot;
+  }
+}</component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -61,8 +75,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/dominik/Documents/coding/native-uber/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.general",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Users/dominik/Documents/coding/native-uber/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,7 +88,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
       </set>
     </attachedChunks>
   </component>
@@ -100,6 +114,17 @@
       <workItem from="1727537634856" duration="62000" />
       <workItem from="1727540779020" duration="2628000" />
       <workItem from="1727686457497" duration="57000" />
+      <workItem from="1728897878882" duration="1000" />
+      <workItem from="1730105898495" duration="26000" />
+      <workItem from="1730105933989" duration="395000" />
+      <workItem from="1730106370699" duration="522000" />
+      <workItem from="1730106914989" duration="112000" />
+      <workItem from="1730312618302" duration="157000" />
+      <workItem from="1730312779796" duration="693000" />
+      <workItem from="1730313478664" duration="2231000" />
+      <workItem from="1730315722636" duration="257000" />
+      <workItem from="1730315986693" duration="28000" />
+      <workItem from="1730316022509" duration="8239000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -138,6 +163,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="file setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="file setup" />
+    <MESSAGE value="added map, driver locations, google search api need to be linked" />
+    <option name="LAST_COMMIT_MESSAGE" value="added map, driver locations, google search api need to be linked" />
   </component>
 </project>
