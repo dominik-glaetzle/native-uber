@@ -12,6 +12,10 @@ import RideCard from "@/components/RideCard";
 import { images, icons } from "@/constants";
 import GoogleTextInput from "@/components/GoogleTextInput";
 import Map from "@/components/Map";
+import { useLocationStore } from "@/store";
+import { useEffect, useState } from "react";
+import * as Location from "expo-location";
+import { router } from "expo-router";
 
 const recentRides = [
   {
@@ -121,16 +125,53 @@ const recentRides = [
 ];
 
 const Home = () => {
+  const { setUserLocation, setDestinationLocation } = useLocationStore();
   const { user } = useUser();
   const loading = false;
 
+  const [hasPermissions, setHasPermissions] = useState(false);
+
   const handleSignOut = async () => {
-    // Füge hier den Logout-Code hinzu
+    // Sign out logic here
   };
 
-  const handleDestination = async () => {
-    // Logik für die Zielauswahl
+  const handleDestinationPress = (location: {
+    latitude: number;
+    longitude: number;
+    address: string;
+  }) => {
+    setDestinationLocation(location);
+    router.push("/(root)/find-ride");
   };
+
+  useEffect(() => {
+    const requestLocation = async () => {
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        setHasPermissions(false);
+        return;
+      }
+
+      setHasPermissions(true);
+
+      let location = await Location.getCurrentPositionAsync({});
+      const address = await Location.reverseGeocodeAsync({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+      });
+
+      setUserLocation({
+        latitude: location.coords.latitude,
+        longitude: location.coords.longitude,
+        // nordchain <3
+        // latitude: 47.30004,
+        // longitude: 11.35002,
+        address: `${address[0].name}, ${address[0].region}`,
+      });
+    };
+
+    requestLocation();
+  }, []);
 
   return (
     <SafeAreaView className="bg-general-500">
@@ -177,7 +218,7 @@ const Home = () => {
             <GoogleTextInput
               icon={icons.search}
               containerStyle="bg-white shadow-md shadow-neutral-300"
-              handlePress={handleDestination}
+              handlePress={handleDestinationPress}
             />
             <>
               <Text className="text-xl font-JakartaBold mt-5 mb-3">
