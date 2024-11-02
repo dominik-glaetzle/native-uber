@@ -25,11 +25,20 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/smxkz/native-uber.git&quot;,
+    &quot;accountId&quot;: &quot;02eaaf56-cc1f-454f-843f-86093230fce2&quot;
+  }
+}</component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -60,6 +69,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/dominik/Documents/coding/native-uber/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+
     &quot;ts.external.directory.path&quot;: &quot;/Users/dominik/Documents/coding/native-uber/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -118,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727537323322</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added map, driver locations, google search api need to be linked">
+      <option name="closed" value="true" />
+      <created>1730324499577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730324499577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +157,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="file setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="file setup" />
+    <MESSAGE value="added map, driver locations, google search api need to be linked" />
+    <option name="LAST_COMMIT_MESSAGE" value="added map, driver locations, google search api need to be linked" />
   </component>
 </project>
