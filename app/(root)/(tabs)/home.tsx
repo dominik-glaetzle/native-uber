@@ -1,8 +1,5 @@
 import { useUser } from "@clerk/clerk-expo";
 import { useAuth } from "@clerk/clerk-expo";
-import * as Location from "expo-location";
-import { router } from "expo-router";
-import { useState, useEffect } from "react";
 import {
   Text,
   View,
@@ -19,7 +16,6 @@ import Map from "@/components/Map";
 import RideCard from "@/components/RideCard";
 import { icons, images } from "@/constants";
 import { useFetch } from "@/lib/fetch";
-import { useLocationStore } from "@/store";
 import { Ride } from "@/types/type";
 import { useLocationStore } from "@/store";
 import { useEffect, useState } from "react";
@@ -134,7 +130,6 @@ const recentRides = [
 ];
 
 const Home = () => {
-  const { setUserLocation, setDestinationLocation } = useLocationStore();
   const { user } = useUser();
   const { signOut } = useAuth();
 
@@ -177,10 +172,6 @@ const Home = () => {
   }, []);
 
   const [hasPermissions, setHasPermissions] = useState(false);
-
-  const handleSignOut = async () => {
-    // Sign out logic here
-  };
 
   const handleDestinationPress = (location: {
     latitude: number;
