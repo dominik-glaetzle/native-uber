@@ -74,10 +74,12 @@ const Map = () => {
   });
 
   useEffect(() => {
-    // Überprüfe, ob die Benutzerposition vorhanden ist
+
     if (!userLongitude || !userLatitude) return;
 
+
     // Generiere neue Marker, wenn die Benutzerposition verfügbar ist
+
     const newMarkers = generateMarkersFromData({
       data: drivers,
       userLatitude,

@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69b01728-255f-4176-a6ff-dcac4a132757" name="Changes" comment="added map, driver locations, google search api need to be linked">
+    <list default="true" id="69b01728-255f-4176-a6ff-dcac4a132757" name="Changes" comment="GoolgeTextInput finished">
       <change afterPath="$PROJECT_DIR$/app/(root)/find-ride.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/map.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/(tabs)/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/(tabs)/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/GoogleTextInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GoogleTextInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Map.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Map.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="feature-FindRideScreen" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +68,8 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/dominik/Documents/coding/native-uber/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+
     &quot;ts.external.directory.path&quot;: &quot;/Users/dominik/Documents/coding/native-uber/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -106,18 +108,9 @@
       <workItem from="1727537634856" duration="62000" />
       <workItem from="1727540779020" duration="2628000" />
       <workItem from="1727686457497" duration="57000" />
-      <workItem from="1728897878882" duration="1000" />
-      <workItem from="1730105898495" duration="26000" />
-      <workItem from="1730105933989" duration="395000" />
-      <workItem from="1730106370699" duration="522000" />
-      <workItem from="1730106914989" duration="112000" />
-      <workItem from="1730312618302" duration="157000" />
-      <workItem from="1730312779796" duration="693000" />
-      <workItem from="1730313478664" duration="2231000" />
-      <workItem from="1730315722636" duration="257000" />
-      <workItem from="1730315986693" duration="28000" />
-      <workItem from="1730316022509" duration="8300000" />
-      <workItem from="1730376056568" duration="2483000" />
+      <workItem from="1730380264730" duration="187000" />
+      <workItem from="1730480849141" duration="947000" />
+      <workItem from="1730546439817" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
