@@ -74,18 +74,18 @@ const Map = () => {
   });
 
   useEffect(() => {
+    setDrivers(drivers);
+    if (Array.isArray(drivers)) {
+      if (!userLongitude || !userLatitude) return;
 
-    if (!userLongitude || !userLatitude) return;
+      const newMarkers = generateMarkersFromData({
+        data: drivers,
+        userLatitude,
+        userLongitude,
+      });
 
-
-    // Generiere neue Marker, wenn die Benutzerposition verfügbar ist
-
-    const newMarkers = generateMarkersFromData({
-      data: drivers,
-      userLatitude,
-      userLongitude,
-    });
-    setMarkers(newMarkers);
+      setMarkers(newMarkers);
+    }
   }, [drivers]);
 
   return (
