@@ -1,27 +1,12 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  TextInput,
-  StyleSheet,
-} from "react-native";
-import React from "react";
-import { GoogleInputProps } from "@/types/type";
+import { View, Text } from 'react-native'
+import React from 'react'
 
-const GoogleTextInput = ({
-  icon,
-  initialLocation,
-  containerStyle,
-  textInputBackgroundColor,
-  handlePress,
-}: GoogleInputProps) => {
+const GoogleTextInput = () => {
   return (
-    <View
-      className={`flex flex-row items-center justify-center relative z-50 rounded-xl ${containerStyle} mb-5`}
-    >
-      <Text>Search</Text>
+    <View>
+      <Text>GoogleTextInput</Text>
     </View>
-  );
-};
+  )
+}
 
-export default GoogleTextInput;
+export default GoogleTextInput
