@@ -7,7 +7,7 @@ import CustomButton from "@/components/CustomButton";
 import OAuth from "@/components/OAuth";
 import { useSignUp } from "@clerk/clerk-expo";
 import ReactNativeModal from "react-native-modal";
-import { fetchAPI } from "../../lib/fetch";
+import { fetchAPI } from "@/lib/fetch";
 
 const SignUp = () => {
   const { isLoaded, signUp, setActive } = useSignUp();
@@ -72,7 +72,6 @@ const SignUp = () => {
           state: "failed",
         });
       }
-      ;
     } catch (err: any) {
       setVerification({
         ...verification,
